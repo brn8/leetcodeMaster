@@ -14,11 +14,10 @@ var maxLengthBetweenEqualCharacters = function(s) {
 		}
 		else{
 			temp++;
-			if(c>max && temp<=1){
-				max=c;
+			if(temp>1){
+					c++;
 			}
-			else{
-				c++;
+			if(c>max){
 				max=c;
 			}
 
